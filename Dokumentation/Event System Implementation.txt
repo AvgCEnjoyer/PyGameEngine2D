@@ -1,0 +1,35 @@
+Event System - CrackMania 2 Event System Implem
+
+
+Neue Komponenten : EventHandle (Klasse), updateLevel (Funktion) 
+
+
+
+
+Klasse           : EventHandle -> Klasse
+
+Methoden(Public) : run(), clear(), setEvent(), |requestEvent()|->(WiP)
+
+Methoden(Privat) : /
+
+Attribute(Public): / 
+
+Attribute(Privat): blocked : bool, types : dict, activeEvents : list
+
+Funktionsweise   : Text in stringform in die Methode "setEvent(actors, restrictions)" geben
+
+Parameter        : actors       -> dict aus allen unbekannten Ausdrücken der String Funktion
+				   restrictions -> String Funktion
+
+Zusätzliches     : clear() Methode bei Folge Funktion anwenden, so das activeEvents[Method1] == None and activeEvents[Method2} != None 
+
+
+
+
+Funktion         : __RunTime__.updateLevel(func) -> Funktion
+
+Funktionsweise   : Ruft generische Level Funktion als Parameter auf und aktualisiert die Klassen internen Werte
+
+Parameter        : Funktions Objekt einer generischen Level Klasse
+
+Zusätzliches     : Die RunTime übergibt nun im ersten Level Aufruf sich selbst als Objekt und kann somit weiter benutzt werden.
